@@ -1,2 +1,2 @@
 # Front-End-Noted
-This is a 
+Original template by themesberg.

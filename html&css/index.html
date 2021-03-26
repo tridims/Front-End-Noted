@@ -210,6 +210,8 @@
     <footer class="footer py-6 bg-primary text-white">
       <div class="container">
         <div class="row">
+
+          <!--Bawah Kiri-->
           <div class="col-md-4">
             <img
               class="navbar-brand-dark mb-4"
@@ -241,6 +243,9 @@
               </li>
             </ul>
           </div>
+          <!--End Bawah Kiri-->
+
+          <!---->
           <div class="col-6 col-md-2 mb-5 mb-lg-0">
             <span class="h5">POROS</span>
             <ul class="links-vertical mt-2">
@@ -259,6 +264,8 @@
               </li>
             </ul>
           </div>
+          <!--End-->
+
           <div class="col-6 col-md-2 mb-5 mb-lg-0">
             <span class="h5">Other</span>
             <ul class="links-vertical mt-2">
@@ -293,6 +300,37 @@
               </li>
             </ul>
           </div>
+
+          <div class="col-12 col-md-4 mb-5 mb-lg-0">
+            <span class="h5 mb-3 d-block">Subscribe</span>
+            <form action="#">
+
+                <div class="form-row mb-2">
+                    <div class="mb-4">
+                      <label for="feedbackName">Your Name</label>
+                      <input type="text" class="form-control" placeholder="your name" id="feedbackName" required>              
+                    </div>
+
+                    <div class="col-12">
+                        <label for="email">Your Name</label>
+                        <input type="email" class="form-control mb-2" placeholder="example@company.com" name="email" id="email" aria-label="Subscribe form" required>
+                    </div>
+
+                    <div class="my-4">
+                      <label for="textarea">Your Feedback</label>
+                      <textarea class="form-control" placeholder="Enter your feedback" id="textarea" rows="4"></textarea>
+                    </div>
+
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-secondary text-dark shadow-soft btn-block" data-loading-text="Sending">
+                            <span>Submit</span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+            <p class="text-muted font-small m-0">We’ll never share your details. See our <a class="text-white" href="#">Privacy Policy</a></p>
+          </div>
+
           
         </div>
         <hr class="bg-gray my-5" />
