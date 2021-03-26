@@ -1,3 +1,19 @@
+<!--
+
+=========================================================
+* Volt - Bootstrap 5 Admin Dashboard
+=========================================================
+
+* Product Page: https://themesberg.com/product/admin-dashboard/volt-bootstrap-5-dashboard
+* Copyright 2020 Themesberg (https://www.themesberg.com)
+
+* Designed and coded by https://themesberg.com
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. Please contact us to request a removal.
+
+-->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -31,6 +47,10 @@
 </head>
 
 <body>
+
+
+
+
 
     <nav class="navbar navbar-dark navbar-theme-primary px-4 col-12 d-md-none">
         <a class="navbar-brand mr-lg-5" href="../../index.html">
@@ -108,7 +128,6 @@
                                 <ul class="navbar-nav align-items-center">
                                     <li class="nav-item dropdown">
                                         <!--tombol preview profil-->
-
                                         <a class="nav-link pt-1 px-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             <div class="media d-flex align-items-center">
                                                 <img class="user-avatar md-avatar rounded-circle" alt="Image placeholder" src="../../assets/img/profile-picture.png">
@@ -118,7 +137,6 @@
                                             </div>
                                         </a>
                                         <!--akhir tombol-->
-
 
                                         <div class="dropdown-menu dashboard-dropdown dropdown-menu-right mt-2">
                                             <a class="dropdown-item font-weight-bold" href="../dashboard/profile.html"><span class="far fa-user-circle"></span>My Profile</a>
@@ -143,76 +161,70 @@
                                 
                             <div class="mb-3 mb-lg-0">
                                     
-                                <h1 class="h2">Your Profile</h1></div></div>
-                        </div>
+                                <h1 class="h2">Edit Profile</h1></div></div>
+                        <div></div></div>
 
-                        <div class="card-body">
-
-                            
                         
-                          <div>
-                <div class="card card-body bg-white border-light shadow-sm mb-4">
+                    <div style="padding-left: 12px;padding-right: 12px;">
                   <h2 class="h5 mb-4">General information</h2>
                   <form>
                     <div class="row">
                       <div class="col-md-6 mb-3">
                         <div>
-                          <label for="Username">Username</label>
-                          <label type="text" required="" id="Username" class="form-control" style="padding-right: 12px;" placeholder="This is your Username"></label>
+                          <label for="first_name">Username</label>
+                          <input class="form-control" id="first_name" type="text" required="" placeholder="Enter your new username">
                         </div>
                       </div>
                       <div class="col-md-6 mb-3">
                         <div>
-                          
-                          
-
-                        <label for="full_name">Full Name</label><label class="form-control" type="text" required="" id="fullName" placeholder=""></label></div>
-
+                          <label for="last_name">Full Name</label>
+                          <input class="form-control" id="last_name" type="text" required="" placeholder="Enter your new Full name">
+                        </div>
                       </div>
                     </div>
                     <div class="row align-items-center">
                       <div class="col-md-6 mb-3">
                         <label for="birthday">Your Birthday</label>
-                        <div class="input-group" style="padding-top: 0px;padding-bottom: 0px;">
-                          <label class="input-group-text"></label>
-                          <label class="form-control datepicker-input" id="birthday" type="text" required=""></label>
+                        <div class="input-group">
+                          <span class="input-group-text"><span class="far fa-calendar-alt"></span></span>
+                          <input data-datepicker="" class="form-control datepicker-input" id="birthday" type="text" required="" placeholder="your new birthday : dd/mm/yyyy">
                         </div>
                       </div>
                       <div class="col-md-6 mb-3">
                         <label for="gender">Your Gender</label>
-                        <label class="form-select mb-0" id="gender" aria-label="Gender select example">
-                          
-                          
-                          
-                        </label>
+                        <select class="form-select mb-0" id="gender" aria-label="Gender">
+                          <option selected="">Gender</option>
+                          <option value="1">Female</option>
+                          <option value="2">Male</option>
+                        </select>
                       </div>
                     </div>
                     <div class="row">
                       <div class="col-md-6 mb-3">
                         <div class="form-group">
                           <label for="email">Email</label>
-                          <label class="form-control" id="email" type="email" required=""></label>
+                          <input class="form-control" id="email" type="email" required="" placeholder="Your new Email : name@company.com">
                         </div>
                       </div>
                       <div class="col-md-6 mb-3">
                         <div class="form-group">
                           <label for="phone">Your Phone Number</label>
-                          <label class="form-control" id="phone" type="number" required=""></label>
+                          <input class="form-control" id="phone" type="number" required="" placeholder="New Number : +62 345 6789 01112">
                         </div>
                       </div>
                     </div>
-                    <h2 class="h5 my-4">Your Adress</h2>
+                    <h2 class="h5 my-4">Adress</h2>
                     <div class="row">
                       <div class="col-sm-9 mb-3">
                         <div class="form-group">
                           <label for="address">Full Address</label>
-                          <label class="form-control" id="address" type="text" placeholder="Enter your home address" required=""></label>
+                          <input class="form-control" id="address" type="text" required="" placeholder="Enter your new home address">
                         </div>
                       </div>
                       <div class="col-sm-3 mb-3">
                         <div class="form-group">
                           <label for="number">Number</label>
-                          <label class="form-control" id="number" type="number" placeholder="No." required=""></label>
+                          <input class="form-control" id="number" type="number" placeholder="No." required="">
                         </div>
                       </div>
                     </div>
@@ -220,21 +232,23 @@
                       <div class="col-sm-4 mb-3">
                         <div class="form-group">
                           <label for="city">City</label>
-                          <label class="form-control" id="city" type="text" placeholder="City" required=""></label>
+                          <input class="form-control" id="city" type="text" placeholder="City" required="">
                         </div>
                       </div>
                       <div class="col-sm-4">
                         <div class="form-group">
-                          <label for="zip">ZIP code</label>
-                          <label class="form-control" id="zip" type="tel" placeholder="ZIP" required=""></label>
+                          <label for="zip">ZIP</label>
+                          <input class="form-control" id="zip" type="tel" placeholder="ZIP" required="">
                         </div>
                       </div>
                     </div>
- 
-                  <button type="submit" class="btn btn-primary"><a class="nav-link" href="../dashboard/edit.html">Edit</a></button><a href="../dashboard/edit.html"></a></form>
-                </div>
-              </div></div>
+                    <div class="mt-3">
+                      <button type="submit" class="btn btn-primary">
+                        Save All
+                      </button>
                     </div>
+                  </form>
+                </div></div>
 
                     <br>
                 </main>
@@ -280,6 +294,14 @@
     <!-- Volt JS -->
     <script src="../../assets/js/volt.js"></script>
 
+
+
+
+
+
+
+
+<div class="datepicker datepicker-dropdown datepicker-orient-top datepicker-orient-left" style="top: 340.2px; left: 314.25px;"><div class="datepicker-picker"><div class="datepicker-header"><div class="datepicker-title" style="display: none;"></div><div class="datepicker-controls"><button class="btn prev-btn">«</button><button class="btn view-switch">March 2021</button><button class="btn next-btn">»</button></div></div><div class="datepicker-main"><div class="datepicker-view"><div class="days"><div class="days-of-week"><span class="dow">Su</span><span class="dow">Mo</span><span class="dow">Tu</span><span class="dow">We</span><span class="dow">Th</span><span class="dow">Fr</span><span class="dow">Sa</span></div><div class="datepicker-grid"><span class="datepicker-cell day prev" data-date="1614445200000">28</span><span class="datepicker-cell day" data-date="1614531600000">1</span><span class="datepicker-cell day" data-date="1614618000000">2</span><span class="datepicker-cell day" data-date="1614704400000">3</span><span class="datepicker-cell day" data-date="1614790800000">4</span><span class="datepicker-cell day" data-date="1614877200000">5</span><span class="datepicker-cell day" data-date="1614963600000">6</span><span class="datepicker-cell day" data-date="1615050000000">7</span><span class="datepicker-cell day" data-date="1615136400000">8</span><span class="datepicker-cell day" data-date="1615222800000">9</span><span class="datepicker-cell day" data-date="1615309200000">10</span><span class="datepicker-cell day" data-date="1615395600000">11</span><span class="datepicker-cell day" data-date="1615482000000">12</span><span class="datepicker-cell day" data-date="1615568400000">13</span><span class="datepicker-cell day" data-date="1615654800000">14</span><span class="datepicker-cell day" data-date="1615741200000">15</span><span class="datepicker-cell day" data-date="1615827600000">16</span><span class="datepicker-cell day" data-date="1615914000000">17</span><span class="datepicker-cell day" data-date="1616000400000">18</span><span class="datepicker-cell day" data-date="1616086800000">19</span><span class="datepicker-cell day" data-date="1616173200000">20</span><span class="datepicker-cell day" data-date="1616259600000">21</span><span class="datepicker-cell day" data-date="1616346000000">22</span><span class="datepicker-cell day" data-date="1616432400000">23</span><span class="datepicker-cell day" data-date="1616518800000">24</span><span class="datepicker-cell day" data-date="1616605200000">25</span><span class="datepicker-cell day focused" data-date="1616691600000">26</span><span class="datepicker-cell day" data-date="1616778000000">27</span><span class="datepicker-cell day" data-date="1616864400000">28</span><span class="datepicker-cell day" data-date="1616950800000">29</span><span class="datepicker-cell day" data-date="1617037200000">30</span><span class="datepicker-cell day" data-date="1617123600000">31</span><span class="datepicker-cell day next" data-date="1617210000000">1</span><span class="datepicker-cell day next" data-date="1617296400000">2</span><span class="datepicker-cell day next" data-date="1617382800000">3</span><span class="datepicker-cell day next" data-date="1617469200000">4</span><span class="datepicker-cell day next" data-date="1617555600000">5</span><span class="datepicker-cell day next" data-date="1617642000000">6</span><span class="datepicker-cell day next" data-date="1617728400000">7</span><span class="datepicker-cell day next" data-date="1617814800000">8</span><span class="datepicker-cell day next" data-date="1617901200000">9</span><span class="datepicker-cell day next" data-date="1617987600000">10</span></div></div></div></div><div class="datepicker-footer"><div class="datepicker-controls"><button class="btn today-btn" style="display: none;">Today</button><button class="btn clear-btn" style="display: none;">Clear</button></div></div></div></div>
 </body>
 
 </html>
